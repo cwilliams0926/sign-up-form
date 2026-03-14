@@ -2,3 +2,7 @@
     font-family: norse-bold;
     src: url(fonts/Norsebold.otf);
 }
+
+:root {
+    --create-account-button: #596D48;
+}
