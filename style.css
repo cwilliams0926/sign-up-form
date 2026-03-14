@@ -6,3 +6,8 @@
 :root {
     --create-account-button: #596D48;
 }
+
+body {
+    font-family: "Google Sans";
+    display: flex;
+}
