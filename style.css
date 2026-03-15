@@ -6,6 +6,8 @@
 :root {
     --create-account-button: #596D48;
     --main-background: #F4F5F6;
+    --input-border: #DDE0E3;
+    --input-focus-border: #3581B8;
 }
 
 body {
@@ -120,4 +122,19 @@ label {
 
 .create-account-button:hover {
     cursor: pointer;
+}
+
+input {
+    border: solid 1px var(--input-border);
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: solid 1px var(--input-focus-border);
+    box-shadow: 0.9px 1.8px 1.8px hsl(0deg 0% 0% / 0.47);
+}
+
+input[id="password"]:invalid,
+input[id="confirm-password"]:invalid {
+    border: solid 1px red;
 }
